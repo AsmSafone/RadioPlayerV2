@@ -62,7 +62,6 @@ async def start(client, message):
         InlineKeyboardButton('owner', url='https://t.me/doreamonfans1')
     ],
     [
-        InlineKeyboardButton('MORE BOTS', url='https://t.me/disneygrou'),
         InlineKeyboardButton('2nd owner', url='https://t.me/Yeageristbotsdev'),
     ],
     [
