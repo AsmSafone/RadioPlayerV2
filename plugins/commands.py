@@ -59,10 +59,11 @@ async def start(client, message):
         [
         InlineKeyboardButton('CHANNEL', url='https://t.me/disneygrou'),
         InlineKeyboardButton('SUPPORT', url='https://t.me/disneyteamchat'),
+        InlineKeyboardButton('owner', url='https://t.me/doreamonfans1')
     ],
     [
         InlineKeyboardButton('MORE BOTS', url='https://t.me/disneygrou'),
-        InlineKeyboardButton('SOURCE CODE', url='https://github.com/AsmSafone/RadioPlayerV2'),
+        InlineKeyboardButton('2nd owner', url='https://t.me/Yeageristbotsdev'),
     ],
     [
         InlineKeyboardButton('⚙️ HELP ⚙️', callback_data='help'),
