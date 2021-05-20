@@ -12,6 +12,7 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 - Automatically downloads audio for the first two tracks in the playlist to ensure smooth playing
 - Show current playing position of the audio
 - Control with buttons and commands
+- Download songs from youtube as audio
 
 ## Deploy to Heroku (The Easy Way)
 
@@ -31,7 +32,18 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 - Bot will starts radio automatically in given `CHAT` with given `STREAM_URL` after deploy. 
 - 24x7 Music even if heroku restarts, radio stream restarts automatically.  
 - To play a song just send the audio file to Bot or reply to an audio with `/play` to start playing it in the voice chat.
+- To download audio you can use [@SafoneMusicBot](http://t.me/SafoneMusicBot) or `/song` command to the bot.
 - Use `/help` to know about other commands & its usage.
+
+## Requirements
+
+- Python 3.6 or higher.
+- A
+  [Telegram API key](https://docs.pyrogram.org/intro/quickstart#enjoy-the-api)
+  and a Telegram account.
+- [FFmpeg Python](https://www.ffmpeg.org/)
+- Telegram [String Session](http://t.me/genStr_robot) of the account.
+- Userbot Needs To Be Admin In The Channel or Group.
 
 ## Run On VPS (The Hard Way)
 
@@ -68,6 +80,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 ```
 ## Credits
 
-- @AsmSafone [Dev]
-- @Dashezup [For tgvc_userbot]
-- @MarshalX [For tgcalls/smart-plugins]
+- [Asm Safone](https://github.com/AsmSafone) [Dev]
+- [Dash Eclipse](https://github.com/dashezup) [For tgvc_userbot]
+- [Marshal X](https://github.com/MarshalX) [For pytgcalls]
