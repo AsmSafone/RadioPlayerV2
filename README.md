@@ -44,6 +44,7 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 - [FFmpeg Python](https://www.ffmpeg.org/)
 - Telegram [String Session](http://t.me/genStr_robot) of the account.
 - Userbot Needs To Be Admin In The Channel or Group.
+- Must Start A Voice Chat In Channel/Group Before Running The Bot.
 
 ## Run On VPS (The Hard Way)
 
