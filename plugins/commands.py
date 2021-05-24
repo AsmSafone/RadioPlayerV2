@@ -39,14 +39,14 @@ __(Join @SafoTheBot For Support)__
 \u2022 `/leave` leave current voice chat
 \u2022 `/vc` check which VC is joined
 \u2022 `/stop` stop playing music
-\u2022 `radio` start radio stream
+\u2022 `/radio` start radio stream
 \u2022 `/stopradio` stop radio stream
 \u2022 `/replay` play from the beginning
 \u2022 `/clean` remove unused RAW PCM files
 \u2022 `/pause` pause playing music
 \u2022 `/resume` resume playing music
 \u2022 `/mute` mute the VC userbot
-\u2022 `unmute` unmute the VC userbot
+\u2022 `/unmute` unmute the VC userbot
 \u2022 `/restart` restart the bot
 
 🏷️ **Developer: @I_Am_Only_One_1** 👑
