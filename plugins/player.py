@@ -176,12 +176,12 @@ async def skip_track(_, m: Message):
 async def join_group_call(client, m: Message):
     group_call = mp.group_call
     if group_call.is_connected:
-        await m.reply_text(f"{emoji.ROBOT} **Already Joined VC!**")
+        await m.reply_text(f"{emoji.ROBOT} **Already Joined To The Voice Chat!**")
         return
     await mp.start_call()
     #await group_call.start(CHAT)
     chat = await client.get_chat(CHAT)
-    await m.reply_text(f"**Succesfully Joined Voice Chat In {chat.title}!**")
+    await m.reply_text(f"{emoji.CHECK_MARK_BUTTON} **Joined The Voice Chat In {chat.title}!**")
 
 
 @Client.on_message(current_vc
@@ -191,7 +191,7 @@ async def leave_voice_chat(_, m: Message):
     mp.playlist.clear()
     group_call.input_filename = ''
     await group_call.stop()
-    await m.reply_text("{emoji.ROBOT} **Left From The VC!**")
+    await m.reply_text(f"{emoji.CROSS_MARK_BUTTON} **Left From The Voice Chat!**")
 
 
 @Client.on_message(filters.command("vc") & filters.user(ADMINS))
@@ -201,12 +201,12 @@ async def list_voice_chat(client, m: Message):
         chat_id = int("-100" + str(group_call.full_chat.id))
         chat = await client.get_chat(chat_id)
         await m.reply_text(
-            f"{emoji.MUSICAL_NOTES} **Currently In**:\n"
+            f"{emoji.MUSICAL_NOTES} **Currently Joined In**:\n"
             f"- **{chat.title}**"
         )
     else:
         await m.reply_text(emoji.NO_ENTRY
-                                   + "**Didn't Join Any VC Yet!**")
+                                   + "**Didn't Joined Any Voice Chat Yet!**")
 
 
 @Client.on_message(current_vc
