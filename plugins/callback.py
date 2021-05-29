@@ -152,5 +152,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except:
             pass
     elif query.data=="help":
-        await query.edit_message_text("🙋‍♂️ **Hi Bruh**, \nJust Send Me An Audio File To Play. You Can Use @SafoneMusicBot To Get Audio Files! 😌\n\nCheck /help To Know More ...")
+        await query.edit_message_text("🙋‍♂️ **Hi Bruh**, \nJust Send Me An Audio File To Play. You Can Use @SafoneMusicBot To Get Audio Files! 😌\n\nCheck /help To Know More ...",
+        reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Close 🔐", callback_data="close"),
+                    ],
+                ]
+            )
+        )
+        
+    elif query.data=="close":
+        await query.message.delete()
 
