@@ -82,5 +82,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 ## Credits
 
 - [Asm Safone](https://github.com/AsmSafone) [Dev]
-- [Dash Eclipse](https://github.com/dashezup) [For tgvc_userbot]
-- [Marshal X](https://github.com/MarshalX) [For pytgcalls]
+- [Dash Eclipse](https://github.com/dashezup) [For tgvc-userbot]
+- [Il'ya](https://github.com/MarshalX) [For tgcalls]
+- [Subin](https://github.com/subinps) [For bot support]
