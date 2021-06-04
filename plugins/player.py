@@ -41,7 +41,7 @@ async def current_vc_filter(_, __, m: Message):
 current_vc = filters.create(current_vc_filter)
 
 
-@Client.on_message((current_vc & filters.command("play") | (current_vc & filters.audio))
+@Client.on_message((current_vc & filters.command("play") | (current_vc & filters.audio & filters.private))
 )
 async def play_track(client, m: Message):
     group_call = mp.group_call
@@ -103,18 +103,18 @@ async def show_current_playing_time(_, m: Message):
         await m.reply_text(f"{emoji.PLAY_BUTTON} **Nothing Playing!**")
         return
     utcnow = datetime.utcnow().replace(microsecond=0)
-    if mp.msg.get('current') is not None:
-        await mp.msg['current'].delete()
-    mp.msg['current'] = await playlist[0].reply_text(
+    #if mp.msg.get('current') is not None:
+        #await mp.msg['current'].delete()
+    await m.reply_text(
         f"{emoji.PLAY_BUTTON}  {utcnow - start_time} / "
         f"{timedelta(seconds=playlist[0].audio.duration)}",
         parse_mode="Markdown",
 		reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🔄", callback_data="replay"),
-					InlineKeyboardButton("⏯", callback_data="pause"),
-                    InlineKeyboardButton("⏩", callback_data="skip")
+			InlineKeyboardButton("🔄", callback_data="replay"),
+			InlineKeyboardButton("⏸", callback_data="pause"),
+			InlineKeyboardButton("⏭", callback_data="skip")
                 
                 ],
 
@@ -181,7 +181,7 @@ async def join_group_call(client, m: Message):
     await mp.start_call()
     #await group_call.start(CHAT)
     chat = await client.get_chat(CHAT)
-    await m.reply_text(f"{emoji.CHECK_MARK_BUTTON} **Joined The Voice Chat In {chat.title}!**")
+    await m.reply_text(f"{emoji.CHECK_MARK_BUTTON} **Joined The Voice Chat In {chat.title} Successfully!**")
 
 
 @Client.on_message(current_vc
@@ -191,7 +191,7 @@ async def leave_voice_chat(_, m: Message):
     mp.playlist.clear()
     group_call.input_filename = ''
     await group_call.stop()
-    await m.reply_text(f"{emoji.CROSS_MARK_BUTTON} **Left From The Voice Chat!**")
+    await m.reply_text(f"{emoji.CROSS_MARK_BUTTON} **Left From The Voice Chat Successfully!**")
 
 
 @Client.on_message(filters.command("vc") & filters.user(ADMINS))
