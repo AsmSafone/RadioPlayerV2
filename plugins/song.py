@@ -34,7 +34,7 @@ def time_to_seconds(time):
 
 ## Commands --------------------------------
 
-@Client.on_message(filters.command(['song']))
+@Client.on_message(filters.command("song") & ~filters.channel & ~filters.edited)
 def a(client, message):
     query = ''
     for i in message.command[1:]:
@@ -75,7 +75,7 @@ def a(client, message):
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with Command!**"
+            "**Enter Song Name with Command**❗\nFor Example: `/song Alone Marshmellow`"
         )
         print(str(e))
         return
@@ -85,7 +85,7 @@ def a(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🏷 <b>Title:</b> <a href="{link}">{title}</a>\n⏳ <b>Duration:</b> <code>{duration}</code>\n👀 <b>Views:</b> <code>{views}</code>\n🎧 <b>Uploaded By:</b> <a href="https://t.me/safonemusicbot">𝚂𝚊𝚏𝚘𝚗𝚎 𝙼𝚞𝚜𝚒𝚌</a>'
+        rep = f'🏷 <b>Title:</b> <a href="{link}">{title}</a>\n⏳ <b>Duration:</b> <code>{duration}</code>\n👀 <b>Views:</b> <code>{views}</code>\n🎧 <b>Requested By:</b> {message.from_user.mention()}\n📤 <b>Uploaded By: @AsmSafone</b> 👑'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
