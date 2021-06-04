@@ -58,7 +58,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         [
                             InlineKeyboardButton("🔄", callback_data="replay"),
                             InlineKeyboardButton("⏸", callback_data="pause"),
-                            InlineKeyboardButton("⏩", callback_data="skip")
+                            InlineKeyboardButton("⏭", callback_data="skip")
                             
                         ],
                     ]
@@ -86,7 +86,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         [
                             InlineKeyboardButton("🔄", callback_data="replay"),
                             InlineKeyboardButton("▶️", callback_data="resume"),
-                            InlineKeyboardButton("⏩", callback_data="skip")
+                            InlineKeyboardButton("⏭", callback_data="skip")
                             
                         ],
                     ]
@@ -114,7 +114,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         [
                             InlineKeyboardButton("🔄", callback_data="replay"),
                             InlineKeyboardButton("⏸", callback_data="pause"),
-                            InlineKeyboardButton("⏩", callback_data="skip")
+                            InlineKeyboardButton("⏭", callback_data="skip")
                             
                         ],
                     ]
@@ -143,7 +143,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         InlineKeyboardButton("🔄", callback_data="replay"),
                         InlineKeyboardButton("⏸", callback_data="pause"),
-                        InlineKeyboardButton("⏩", callback_data="skip")
+                        InlineKeyboardButton("⏭", callback_data="skip")
                             
                     ],
                 ]
