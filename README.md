@@ -51,7 +51,7 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 ```sh
 $ git clone https://github.com/AsmSafone/RadioPlayerV2
 $ cd RadioPlayerV2
-$ sudo apt-get install ffmpeg
+$ sudo apt-get install python3-pip ffmpeg
 $ pip3 install -U pip
 $ pip3 install -U -r requirements.txt
 ```
@@ -82,6 +82,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 ## Credits
 
 - [Asm Safone](https://github.com/AsmSafone) [Dev]
-- [Dash Eclipse](https://github.com/dashezup) [For tgvc-userbot]
+- [Dash Eclipse](https://github.com/dashezup) [Dev]
 - [Il'ya](https://github.com/MarshalX) [For tgcalls]
 - [Subin](https://github.com/subinps) [For bot support]
