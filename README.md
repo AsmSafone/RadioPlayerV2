@@ -1,4 +1,16 @@
 # Telegram Radio Player V2
+![GitHub Repo stars](https://img.shields.io/github/stars/AsmSafone/RadioPlayerV2?color=blue&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/AsmSafone/RadioPlayerV2?color=green&style=flat)
+![GitHub issues](https://img.shields.io/github/issues/AsmSafone/RadioPlayerV2)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/AsmSafone/RadioPlayerV2)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AsmSafone/RadioPlayerV2)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AsmSafone/RadioPlayerV2)
+![GitHub contributors](https://img.shields.io/github/contributors/AsmSafone/RadioPlayerV2?style=flat)
+![GitHub repo size](https://img.shields.io/github/repo-size/AsmSafone/RadioPlayerV2?color=red)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/AsmSafone/RadioPlayerV2)
+![GitHub](https://img.shields.io/github/license/AsmSafone/RadioPlayerV2)
+[![Bot Support](https://img.shields.io/badge/Radio%20Player%20V2-support%20group-blue)](https://t.me/safothebot)
+
 
 An Telegram Bot to Play Radio/Music in Channel or Group Voice Chats.
 
@@ -16,7 +28,7 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 
 ## Deploy to Heroku (The Easy Way)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV2)
+<p><a href="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
 ## Heroku Vars:
 1. `API_ID` : Get From my.telegram.org
