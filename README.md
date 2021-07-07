@@ -1,21 +1,21 @@
 # Telegram Radio Player V2
-![GitHub Repo stars](https://img.shields.io/github/stars/AsmSafone/RadioPlayerV2?color=blue&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/AsmSafone/RadioPlayerV2?color=green&style=flat)
-![GitHub issues](https://img.shields.io/github/issues/AsmSafone/RadioPlayerV2)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/AsmSafone/RadioPlayerV2)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AsmSafone/RadioPlayerV2)
+![GitHub Repo stars](https://img.shields.io/github/stars/RJSobujKhan/RadioPlayerV2?color=blue&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/RJSobujKhan/RadioPlayerV2?color=green&style=flat)
+![GitHub issues](https://img.shields.io/github/issues/RJSobujKhan/RadioPlayerV2)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/RJSobujKhan/RadioPlayerV2)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/RJSobujKhan/RadioPlayerV2)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AsmSafone/RadioPlayerV2)
-![GitHub contributors](https://img.shields.io/github/contributors/AsmSafone/RadioPlayerV2?style=flat)
+![GitHub contributors](https://img.shields.io/github/contributors/RJSobujKhan/RadioPlayerV2?style=flat)
 ![GitHub repo size](https://img.shields.io/github/repo-size/AsmSafone/RadioPlayerV2?color=red)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/AsmSafone/RadioPlayerV2)
 ![GitHub](https://img.shields.io/github/license/AsmSafone/RadioPlayerV2)
-[![Bot Support](https://img.shields.io/badge/Radio%20Player%20V2-support%20group-blue)](https://t.me/safothebot)
+[![Bot Support](https://img.shields.io/badge/Radio%20Player%20V2-support%20group-blue)](https://t.me/RJSobujKhan)
 
 
 An Telegram Bot to Play Radio/Music in Channel or Group Voice Chats.
 
 This is also the source code of the bot which is being used for playing
-Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](https://t.me/safothebot) Group.
+Radio in [RJSobujKhan](https://t.me/RJSobujKhan) Channel & Music in [RJSobujKhan](https://t.me/RJSobujKhan) Group.
 
 ## Special Features
 
@@ -28,7 +28,7 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 
 ## Deploy to Heroku (The Easy Way)
 
-<p><a href="https://heroku.com/deploy?template=https://github.com/AsmSafone/RadioPlayerV2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/RJSobujKhan/RadioPlayerV2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deploying!
 
 ## Heroku Vars:
@@ -45,7 +45,7 @@ NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deplo
 - Bot will starts radio automatically in given `CHAT` with given `STREAM_URL` after deploy. 
 - 24x7 Music even if heroku restarts, radio stream restarts automatically.  
 - To play a song just send the audio file to Bot or reply to an audio with `/play` to start playing it in the voice chat.
-- To download audio you can use [@SafoneMusicBot](http://t.me/SafoneMusicBot) or `/song` command to the bot.
+- To download audio you can use [@RJSobujKhan](http://t.me/RJSobujKhan) or `/song` command to the bot.
 - Use `/help` to know about other commands & its usage.
 
 ## Requirements
@@ -62,7 +62,7 @@ NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deplo
 ## Run On VPS (The Hard Way)
 
 ```sh
-$ git clone https://github.com/AsmSafone/RadioPlayerV2
+$ git clone https://github.com/RJSobujKhan/RadioPlayerV2
 $ cd RadioPlayerV2
 $ sudo apt-get install python3-pip ffmpeg
 $ pip3 install -U pip
@@ -77,7 +77,7 @@ $ python3 main.py
 ## License
 ```sh
 RadioPlayerV2, Telegram Voice Chat Userbot
-Copyright (C) 2021  Asm Safone
+Copyright (C) 2021  RJSobujKhan
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -94,7 +94,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 ```
 ## Credits
 
-- [Asm Safone](https://github.com/AsmSafone) [Dev]
+- [RJSobujKhan](https://github.com/RJSobujKhan) [Dev]
 - [Dash Eclipse](https://github.com/dashezup) [Dev]
 - [Il'ya](https://github.com/MarshalX) [For tgcalls]
 - [Subin](https://github.com/subinps) [For bot support]
