@@ -95,6 +95,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 ## Credits
 
 - [RJSobujKhan](https://github.com/SobujKhanSK) [Dev]
-- [Dash Eclipse](https://github.com/dashezup) [Dev]
-- [Il'ya](https://github.com/MarshalX) [For tgcalls]
-- [Subin](https://github.com/subinps) [For bot support]
+- [Dash Eclipse](https://github.com/SobujKhanSK) [Dev]
+- [Il'ya](https://github.com/SobujKhanSK) [For tgcalls]
+- [Subin](https://github.com/SobujKhanSK) [For bot support]
