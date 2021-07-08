@@ -11,7 +11,7 @@ RUN python -m pip install wheel Pyrogram TgCrypto
 RUN python -m pip install pytgcalls ffmpeg-python psutil
 RUN python -m pip install tgintegration youtube-dl youtube_search requests
 
-RUN wget -q https://github.com/SobujKhanSK/RadioPlayerV2/archive/safone.tar.gz && tar xf sobuj.tar.gz && rm sobuj.tar.gz
+RUN wget -q https://github.com/SobujKhanSK/RadioPlayerV2/archive/sobuj.tar.gz && tar xf sobuj.tar.gz && rm sobuj.tar.gz
 
 WORKDIR /RadioPlayerV2-sobuj
 CMD python3 main.py
