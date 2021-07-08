@@ -1,6 +1,6 @@
 """
 RadioPlayerV2, Telegram Voice Chat Userbot
-Copyright (C) 2021  Asm Safone <https://t.me/asmsafone>
+Copyright (C) 2021  Sobuj Khan <https://t.me/PremiumAppsAndModAppsFreeChannel>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
