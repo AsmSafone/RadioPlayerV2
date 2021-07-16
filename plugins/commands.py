@@ -22,10 +22,8 @@ from pyrogram import Client, filters
 
 
 
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop. Made with ❤️ By @AsmSafone!"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Radio Player Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop. Made with ❤️ By @Abh1sH3k_Official!"
 HELP = """🏷️ **Need Help?** 🤔
-__(Join @SafoTheBot For Support)__
-
 🏷️ **Common Commands**:
 \u2022 `/play` reply to an audio to play or queue it
 \u2022 `/help` shows help for commands
@@ -49,7 +47,7 @@ __(Join @SafoTheBot For Support)__
 \u2022 `/unmute` unmute the VC userbot
 \u2022 `/restart` restart the bot
 
-🏷️ **Developer: @I_Am_Only_One_1** 👑
+🏷️ **Developer: @Abh1sH3k_Official** 👑Thnx Have A good Day 
 """
 
 
@@ -57,12 +55,12 @@ __(Join @SafoTheBot For Support)__
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('CHANNEL', url='https://t.me/AsmSafone'),
-        InlineKeyboardButton('SUPPORT', url='https://t.me/SafoTheBot'),
+        InlineKeyboardButton('My Developer', url='https://t.me/Abh1sH3k_Official'),
+        InlineKeyboardButton('My Master Info', url='https://t.me/About_Abhii'),
     ],
     [
-        InlineKeyboardButton('MORE BOTS', url='https://t.me/AsmSafone/12'),
-        InlineKeyboardButton('SOURCE CODE', url='https://github.com/AsmSafone/RadioPlayerV2'),
+        InlineKeyboardButton('Want Own Bot', url='https://telegra.ph/How-To-Make-Own-Radio-Bot-07-16'),
+        InlineKeyboardButton('SOURCE CODE', url='t.me/Abh1sH3k_Official'),
     ],
     [
         InlineKeyboardButton('⚙️ HELP ⚙️', callback_data='help'),
