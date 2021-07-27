@@ -1,5 +1,5 @@
 """
-RadioPlayerV2, Telegram Voice Chat Userbot
+RadioPlayerV2, Telegram Voice Chat Bot
 Copyright (C) 2021  Asm Safone
 
 This program is free software: you can redistribute it and/or modify
@@ -229,7 +229,7 @@ async def restart_playing(_, m: Message):
     await mp.update_start_time()
     await m.reply_text(
         f"{emoji.COUNTERCLOCKWISE_ARROWS_BUTTON}  "
-        "**Playing From The Beginning...**"
+        "**Playing From The Beginning!**"
     )
 
 

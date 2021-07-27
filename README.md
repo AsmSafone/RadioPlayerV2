@@ -12,7 +12,7 @@
 [![Bot Support](https://img.shields.io/badge/Radio%20Player%20V2-support%20group-blue)](https://t.me/safothebot)
 
 
-An Telegram Bot to Play Radio/Music in Channel or Group Voice Chats.
+An Telegram Bot to Play Nonstop Radio/Music in Channel or Group Voice Chats.
 
 This is also the source code of the bot which is being used for playing
 Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](https://t.me/safothebot) Group.
@@ -32,14 +32,14 @@ Radio in [AsmSafone](https://t.me/AsmSafone) Channel & Music in [SafoTheBot](htt
 NOTE: Make Sure You Have Started A Voice Chat In Your Channel/Group Before Deploying!
 
 ## Heroku Vars:
-1. `API_ID` : Get From my.telegram.org
-2. `API_HASH` : Get From my.telegram.org
-3. `BOT_TOKEN` : Get it From @Botfather
-4. `SESSION_STRING` : Generate From [@genStr robot](http://t.me/genStr_robot).
+1. `API_ID` : Get it from my.telegram.org
+2. `API_HASH` : Get it from my.telegram.org
+3. `BOT_TOKEN` : Get it from @Botfather
+4. `SESSION_STRING` : Generate it from [@genStr robot](http://t.me/genStr_robot) or [![genStr](https://img.shields.io/badge/repl.it-genStr-yellowgreen)](https://repl.it/@AsmSafone/genStr)
 5. `CHAT` : ID of Channel/Group where the bot plays Music/Radio.
 6. `LOG_GROUP` : Group to send Playlist, if CHAT is a Group.
 7. `ADMINS` : ID of users who can use admin commands.
-8. `STREAM_URL` : Stream URL of radio station to stream when the bot starts or with /radio command.
+8. `STREAM_URL` : Stream URL of radio station to stream when the bot starts or with /radio command. Here is [Some Live Streaming Links](https://telegra.ph/Live-Radio-Stream-Links-05-17).
 
 - Enable the worker after deploy the project to Heroku.
 - Bot will starts radio automatically in given `CHAT` with given `STREAM_URL` after deploy. 
@@ -76,8 +76,8 @@ $ python3 main.py
 
 ## License
 ```sh
-RadioPlayerV2, Telegram Voice Chat Userbot
-Copyright (C) 2021  Asm Safone
+RadioPlayerV2, Telegram Voice Chat Bot
+Copyright (C) 2021  Asm Safone <https://t.me/AsmSafone>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by

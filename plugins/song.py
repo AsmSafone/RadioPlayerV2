@@ -1,5 +1,5 @@
 """
-RadioPlayerV2, Telegram Voice Chat Userbot
+RadioPlayerV2, Telegram Voice Chat Bot
 Copyright (C) 2021  Asm Safone
 
 This program is free software: you can redistribute it and/or modify
