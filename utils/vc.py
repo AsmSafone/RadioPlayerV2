@@ -23,7 +23,7 @@ import ffmpeg
 from pyrogram import emoji
 from pyrogram.methods.messages.download_media import DEFAULT_DOWNLOAD_DIR
 from pyrogram.types import Message
-from pytgcalls import GroupCallFactory
+from pytgcalls import GroupCall
 import signal
 from user import USER
 
@@ -36,7 +36,7 @@ LOG_GROUP=Config.LOG_GROUP
 
 class MusicPlayer(object):
     def __init__(self):
-        self.group_call = GroupCallFactory(USER, GroupCallFactory.MTPROTO_CLIENT_TYPE.PYROGRAM).get_file_group_call()
+        self.group_call = GroupCall(USER, path_to_log_file='')
         self.chat_id = None
         self.start_time = None
         self.playlist = []
@@ -209,6 +209,13 @@ mp = MusicPlayer()
 
 
 # pytgcalls handlers
+
+@mp.group_call.on_network_status_changed
+async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
+    if is_connected:
+        mp.chat_id = int("-100" + str(gc.full_chat.id))
+    else:
+        mp.chat_id = None
 
 
 @mp.group_call.on_playout_ended

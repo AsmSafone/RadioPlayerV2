@@ -20,9 +20,16 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram import Client, emoji
 from datetime import datetime, timedelta
 from utils.vc import mp
+from config import Config
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
+    if query.from_user.id not in Config.ADMINS and query.data != "help" and query.data != "close":
+        await query.answer(
+            "You're Not Allowed! 🤣",
+            show_alert=True
+            )
+        return
     if query.data == "replay":
         group_call = mp.group_call
         if not mp.playlist:
