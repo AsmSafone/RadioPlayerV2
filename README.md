@@ -15,7 +15,7 @@
 An Telegram Bot to Play Nonstop Radio/Music in Channel or Group Voice Chats.
 
 This is also the source code of the bot which is being used for playing
-Radio in [Dacchu](https://t.me/Dacchu_Xy) Channel & Music in [Bots Market](https://t.me/DacchuLive) Group.
+Radio in [Dacchu](https://t.me/XDacchuX) Channel & Music in [Bots Market](https://t.me/DacchuLive) Group.
 
 ## Special Features
 
@@ -77,7 +77,7 @@ $ python3 main.py
 ## License
 ```sh
 RadioPlayerV2, Telegram Voice Chat Bot
-Copyright (C) 2021  Asm Safone <https://t.me/XDACCHUX>
+Copyright (C) 2021  Dacchu <https://t.me/XDACCHUX>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
