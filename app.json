@@ -1,5 +1,5 @@
 {
-  "name": "Telegram Radio Player V2",
+  "name": "Telegram Radio Player",
   "description": "An Telegram Bot Maded By Dacchu to Play Nonstop Radio/Music in Telegram Voice Chats",
   "repository": "https://github.com/XDacchuX/RadioPlayerV2",
   "logo": "https://telegra.ph/file/a3755d9cb09f1361e3ac7.jpg",
@@ -45,7 +45,7 @@
     },
     "STREAM_URL": {
       "description": "URL of Radio station to stream when the bot starts",
-      "value": "https://radioindia.net/radio/hungamanow/icecast.audio",
+      "value": "https://hls-01-regions.emgsound.ru/11_msk/playlist.m3u8",
       "required": false
 }
   },
