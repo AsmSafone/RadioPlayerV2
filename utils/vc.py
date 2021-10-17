@@ -212,10 +212,7 @@ mp = MusicPlayer()
 
 @mp.group_call.on_network_status_changed
 async def network_status_changed_handler(gc: GroupCall, is_connected: bool):
-    if is_connected:
-        mp.chat_id = int("-100" + str(gc.full_chat.id))
-    else:
-        mp.chat_id = None
+    mp.chat_id = int("-100" + str(gc.full_chat.id)) if is_connected else None
 
 
 @mp.group_call.on_playout_ended

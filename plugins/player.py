@@ -32,10 +32,7 @@ LOG_GROUP=Config.LOG_GROUP
 
 async def current_vc_filter(_, __, m: Message):
     group_call = mp.group_call
-    if group_call.is_connected:
-        return True
-    else:
-        return False
+    return bool(group_call.is_connected)
 
 
 current_vc = filters.create(current_vc_filter)

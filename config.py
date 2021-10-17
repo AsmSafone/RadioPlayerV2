@@ -16,8 +16,11 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
+
 import os
 import re
+
+
 
 
 class Config:
@@ -26,12 +29,9 @@ class Config:
     API_ID = int(os.environ.get("API_ID", 12345))
     CHAT = int(os.environ.get("CHAT", ""))
     LOG_GROUP = os.environ.get("LOG_GROUP", "")
-    if LOG_GROUP:
-        LOG_GROUP = int(LOG_GROUP)
-    else:
-        LOG_GROUP = None
+    LOG_GROUP = int(LOG_GROUP) if LOG_GROUP else None
     STREAM_URL = os.environ.get("STREAM_URL", "https://radioindia.net/radio/hungamanow/icecast.audio")
     API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     SESSION = os.environ.get("SESSION_STRING", "")
 
