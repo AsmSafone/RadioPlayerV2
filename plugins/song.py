@@ -1,6 +1,6 @@
 """
 RadioPlayerV2, Telegram Voice Chat Bot
-Copyright (C) 2021  Asm Safone
+Copyright (C) 2021  XDacchuX
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -65,7 +65,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[ꜱᴀꜰᴏɴᴇ ᴍᴜꜱɪᴄ]" 
+            performer = f"[ᴅᴀᴄᴄʜᴜ ᴍᴜꜱɪᴄ]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -95,7 +95,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To @SafoTheBot !!**')
+        m.edit('**An Error Occured. Please Report This To @DacchuLive !!**')
         print(e)
     try:
         os.remove(audio_file)
